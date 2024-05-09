@@ -1,0 +1,4 @@
+dpkt==1.9.4
+scapy==2.4.4
+ctypes==1.1.0
+argparse==1.1

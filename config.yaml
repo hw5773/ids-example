@@ -1,0 +1,59 @@
+packet_capturer:
+	training_packets: data/training.pcap
+	training_label: data/training.label
+	testing_packets: data/testing.pcap
+	testing_label: data/testing.label
+
+window_manager:
+	window_length: 1
+	sliding_interval: 0.1
+
+feature_extractor:
+	flow_psh: true
+	fpkts_per_second: true
+	total_bhlen: true
+	flow_iat_max: true
+	backward_packet_length_max: true
+	forward_iat_std: true
+	total_length_of_forward_packets: true
+	backward_packet_length_std: true
+	forward_iat_min: true
+	total_fhlen: true
+	total_length_of_backward_packets: true
+	total_backward_packets: true
+	forward_iat_max: true
+	forward_packet_length_mean: true
+	backward_iat_min: true
+	flow_iat_min: true
+	backward_packet_length_min: true
+	flow_syn: true
+	bpkts_per_second: true
+	flow_protocol: true
+	forward_iat_total: true
+	forward_packet_length_min: true
+	backward_iat_max: true
+	flow_iat_total: true
+	flow_urg: true
+	flow_fin: true
+	flow_ece: true
+	forward_packet_length_std: true
+	backward_packet_length_mean: true
+	flow_iat_std: true
+	flow_ack: true
+	backward_iat_total: true
+	backward_iat_mean: true
+	flow_rst: true
+	total_forward_packets: true
+	flow_packets_per_second: true
+	backward_iat_std: true
+	flow_cwr: true
+	forward_iat_mean: true
+	flow_iat_mean: true
+	forward_packet_length_max: true
+
+encoder_manager:
+	name: nprint
+
+model_manager:
+	name: svm
+
